@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Main.css">
+    <script src="Main.JS"></script>
+</head>
+<body>
+    <h1>Golf Brands</h1>
+    <!--Inputed an image to have an event when the mouse hovers over the image-->
+    <img src="t100group.jpg" id="t100image" width="400px" alt="Titleist" onmouseover="imageEvent();">
+    <!--Created a div to hold the form where the user will enter their first and last name -->
+    <div>
+        <h3>Please enter your first and last name!</h3>
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" onfocus = "submitEvent()"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname">
+        </form>
+    </div>
+    <br> 
+    <!--Create a button that when it is clicked it will display the time below the button.-->
+    <button onclick="getElementById('time').innerHTML = Date()">What is the time?</button>
+    <p id = 'time'></p>
+
+    <br>
+    <!--Create another div for users to select from a list and make a choice with a checkbox-->
+    <div>
+        <h3>Please select a brand from the list below! </h3>
+        <form>
+            <input type="checkbox" id="club1" name="club1" value="Titleist">
+            <label for="club1"> Titleist Clubs</label><br>
+            <input type="checkbox" id="club2" name="club2" value="Callaway">
+            <label for="club2"> Callaway Clubs</label><br>
+            <input type="checkbox" id="club3" name="club3" value="Taylormade">
+            <label for="club3"> Taylormade Clubs</label>
+            <input type="checkbox" id="club4" name="club4" value="Mizuno">
+            <label for="club4"> Mizuno Clubs</label>
+         </form>
+    </div>
+
+    <div>
+        <audio id = "Music">
+            <source src="Music.mp3" type = "audio/mpeg">
+        </audio>
+
+        <p>Please click the button to play music! Double click the button to stop the music!</p>
+        <button onclick="noise()" type="button">Play Audio</button>
+    </div>
+</body>
+</html>
